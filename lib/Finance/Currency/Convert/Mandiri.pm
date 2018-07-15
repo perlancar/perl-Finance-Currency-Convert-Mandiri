@@ -173,7 +173,7 @@ _
         },
         which => {
             summary => 'Select which rate to use (default is average buy+sell for e-Rate)',
-            schema => ['str*', in=>[map { my $bsa = $_; map {"${bsa}_$_"} qw(bn er ttc) } qw(buy sell avg)]],
+            schema => ['str*', in=>[map { my $bsa = $_; map {"${bsa}_$_"} qw(bn sr ttc) } qw(buy sell avg)]],
             description => <<'_',
 
 {buy,sell,avg}_{bn,er,ttc}.
